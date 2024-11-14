@@ -1,0 +1,557 @@
+html{
+    scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    scroll-padding: 50px;
+}
+*{
+    box-sizing: border-box;   
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+h1 , h2 , h3 , h4 ,h5 ,h6 {
+    font-family: Montserrat, sans-serif !important;
+
+}
+/* start nav  */
+nav .nav-logo a{
+    font-family:Montserrat ,sans-serif ;
+    font-size: 18px;
+    font-weight: 800;
+     line-height: 25.7143px
+}
+nav .nav-item{
+    font-family: Poppins ,sans-serif !important;
+    font-size: 14px !important;
+    position: relative;
+}
+nav{
+    position: fixed;
+    z-index: 10;
+}
+nav  .nav-item .active{
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+
+}
+nav  .nav-item .active::after{
+
+   content: "";
+   position: absolute;
+   height: 1px;
+   width: 50px;
+   background-color: #000;
+   bottom: 0;
+   transform: translate(-90% , -100%);
+}
+
+/* end nav  */
+
+/* start header  */
+#header{
+    background-image:url(../imgs/bg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.577);
+    background-blend-mode: multiply;
+   
+}
+.headertittle  .heads h5{
+    font-size: 50px;
+    font-family: Montserrat, sans-serif;
+    line-height: 55px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.headertittle  .heads .spanfirst{
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+}
+.headertittle  .heads .spantwo{
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+.headertittle span{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+#header i{
+    background-color: rgba(132, 126, 126, 0.118);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+}
+@media screen  and (min-width:768px){
+    .md-100 {
+        width: 100%;
+     }
+  
+     .md-50 {
+        width: 50%;
+     }
+  
+     .md-40 {
+        width: 40%;
+     }
+  
+     .md-33 {
+        width: 33.33333%;
+     }
+  
+     .md-20 {
+        width: 20%;
+     }
+  
+     .md-16 {
+        width: 16.66666%;
+     }
+     .headertittle h2{
+        font-size: 50px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 55px;
+        font-weight: 800;
+        margin-bottom: 5px;
+    }
+    .headertittle span{
+        font-size: 60px;
+        font-family: "Montserrat", sans-serif;
+    }
+
+
+    }
+/* end header  */
+
+
+
+
+    /* start about  */
+    #about .button .buton {
+        padding: 10px 30px;
+        border: 1px solid #1c1c1c;
+        border-radius: 5px;
+        font-size: 13px;
+        transition: all 0.5s;
+        margin: 20px 5px 0px;  
+        color: #000000; 
+    }
+
+    #about .button .button-cv {
+        background: #1c1c1c;
+        color: #eee;
+        font-weight: 400;
+    }
+    
+    #about .button .button-cv:hover {
+        background: transparent;
+        color: #1c1c1c;
+    }
+     
+    #about .button .button-me:hover {
+        background: #1c1c1c;
+        color: #eee;
+    }
+
+    #about  .about-img {
+        position: relative;
+        z-index: 4;
+    
+    }
+    
+    #about  .about-img::after {
+        content: "";
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        background-image: url(../imgs/dots.png);
+        background-repeat: repeat;
+        z-index: -1;
+    
+    }
+    #about .about-img {
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+
+    #about .about-tittle h3{
+        font-family: Montserrat , sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 33px;
+        color: rgb(52 , 52 ,52);
+    }
+    #about .about-tittle span{
+        font-family:  Poppins, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;  
+    }
+    #about p{
+        font-family: poppins , sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+/* end about  */
+
+/* start services  */
+
+#services .porto-tittle{
+    
+    position: relative;
+    display: inline-block;
+    z-index: 4; 
+    text-align: center !important;
+    color: #343434;
+       
+}
+#services  .container  .porto-tittle  h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+   
+}
+#services .por{
+    text-align: center;
+}
+#services .porto-tittle  h3{
+    font-size: 40px;
+    font-weight: 900;
+}
+#services h6{
+    font-family:  Montserrat ,sans-serif ;
+    font-size: 18px;
+    font-weight: 800;
+}
+#services p {
+    font-family:  Poppins , sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#services i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #eee;
+    transition: all 0.3s;
+}
+#services .original:hover i{
+    background-color: #000000;
+    color: #fff;
+}
+
+/* end services  */
+   /* start porto  */
+ #portofolio figcaption{
+        background: rgba(255, 255, 255, 0.95);
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        opacity: 0;
+        transition:  all 0.5s;
+        
+    }
+ #portofolio figure:hover figcaption{
+        opacity: 1;
+    }
+
+#portofolio .icon .icon-r,
+#portofolio .icon .icon-l {
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    padding: 2px;
+}
+
+#portofolio .icon .icon-r:hover,
+#portofolio .icon .icon-l:hover {
+    background: transparent;
+    color: #000;
+}
+#portofolio  .poro{
+    color: #1c1c1c !important;
+}
+
+#portofolio  .work .active{
+    background-color: black !important;
+    color: aliceblue !important;
+}
+#portofolio .porto-tittle{
+   
+    position: relative;
+    display: inline-block;
+    z-index: 4; 
+    text-align: center !important;
+       
+}
+#portofolio  .container  .porto-tittle  h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+   
+}
+#portofolio .por{
+    text-align: center;
+}
+#portofolio .porto-tittle  h3{
+    font-weight: 900;
+    font-size: 40px;
+   
+}
+#portofolio .nav-pills{
+    margin-top: 50px;
+}
+/* end porto  */
+
+/* start slider  */
+ #slider .blueimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+ #slider .blueimg img{
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+#slider span{
+    text-align: center;
+}
+
+#slider .porto-tittle{
+    font-weight: 900;
+    font-size: 40px !important;
+    position: relative;
+    display: inline-block;
+    z-index: 4; 
+    text-align: center !important;
+       
+}
+#slider  .container  .porto-tittle  h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+   
+}
+#slider .por{
+    text-align: center;
+}
+#slider .porto-tittle  h3{
+    font-size: 40px;
+    font-weight: 900;  
+}
+ 
+#slider  .text-slid  p{
+    font-family:  Poppins , sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+}
+/* end slider  */
+
+/* start team  */
+.cardimg img{
+    transition: transform 1.2s;
+}
+.cardimg:hover img{
+    transform: scale(1.2);
+}
+#team .overlay{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: #ffffffd2;
+    opacity: 0;
+    transition: all 1s;
+    
+}
+#team .child{
+    transition: all 1s;
+}
+#team .parent:hover .overlay{
+    opacity: 1;
+    transform: rotatey(180deg);
+
+}
+ 
+#team  i {
+    transform: rotatey(180deg);
+}
+
+#team  li {
+    width: 50px;
+    height: 50px;
+    background-color: #1c1c1c;
+    transition: all 1s;
+
+
+}
+
+#team  li:hover {
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+}
+
+#team  li:hover i {
+    color: #1c1c1c;
+}
+#team .porto-tittle{
+    
+    position: relative;
+    display: inline-block;
+    z-index: 4; 
+    text-align: center !important;
+       
+}
+#team  .container  .porto-tittle  h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+   
+}
+#team .por{
+    text-align: center;
+}
+#team .porto-tittle  h3{
+    font-weight: 900;
+    font-size: 40px;
+}
+
+#team .cardbody{
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(91, 91, 91);
+}
+/* end team  */
+
+/* start contact  */
+#contacts .first i{
+    width: 70px;
+    height:70px;
+    background-color: #f4f4f4;
+    transition:all 0.3s;
+}
+
+#contacts .main:hover i{
+    background-color: #000000;
+    color: #fff;
+
+}
+#contacts .button .button-cv {
+    background: #1c1c1c;
+    color: #eee;
+    font-weight: 400;
+}
+#contacts .button .buton {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+    margin: 20px 5px 0px;   
+}
+form textarea {
+    padding-bottom: 250px;
+}
+#contacts .porto-tittle{
+    
+    position: relative;
+    display: inline-block;
+    z-index: 4; 
+    text-align: center !important;
+       
+}
+#contacts  .container  .porto-tittle  h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+   
+}
+#contacts .por{
+    text-align: center;
+}
+#contacts .porto-tittle  h3{
+    font-size: 40px;
+    font-weight: 900;
+    
+}
+/* end contact  */
+
+
+footer{
+    background-color: rgb(28 , 28 ,28 );
+}
+footer  .para{
+    color: rgb(115, 129, 130);
+}
+
+
+
+
+
+
+
+
+ 
+
+    
